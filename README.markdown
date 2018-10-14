@@ -40,7 +40,7 @@ bin/kafka-server-start.sh config/server.properties
 Execute the following command,
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.knoldus.kafka.examples.demo.ProducerDemo"
+bin/activator "run-main com.knoldus.kafka.examples.demo.ProducerDemo"
 ```
 This starts producing records transactionally into the Kafka topic queue.
 
@@ -51,7 +51,7 @@ Step 1:
 Execute the following command,
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.knoldus.kafka.examples.demo.ConsumerDemo"
+bin/activator "run-main com.knoldus.kafka.examples.demo.ConsumerDemo"
 ```
 
 Template license
